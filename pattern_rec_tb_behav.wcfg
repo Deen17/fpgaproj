@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="pattern_rec_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="pattern_rec_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3106000000000001fs"></ZoomEndTime>
+      <Cursor1Time time="1294447561142000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="116"></NameColumnWidth>
+      <ValueColumnWidth column_width="207"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wave_markers>
+      <marker time="534000000000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/pattern_rec_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/oled_sdin" type="logic">
+      <obj_property name="ElementShortName">oled_sdin</obj_property>
+      <obj_property name="ObjectShortName">oled_sdin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/oled_sclk" type="logic">
+      <obj_property name="ElementShortName">oled_sclk</obj_property>
+      <obj_property name="ObjectShortName">oled_sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/oled_dc" type="logic">
+      <obj_property name="ElementShortName">oled_dc</obj_property>
+      <obj_property name="ObjectShortName">oled_dc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/oled_res" type="logic">
+      <obj_property name="ElementShortName">oled_res</obj_property>
+      <obj_property name="ObjectShortName">oled_res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/oled_vbat" type="logic">
+      <obj_property name="ElementShortName">oled_vbat</obj_property>
+      <obj_property name="ObjectShortName">oled_vbat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/oled_vdd" type="logic">
+      <obj_property name="ElementShortName">oled_vdd</obj_property>
+      <obj_property name="ObjectShortName">oled_vdd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/adv" type="logic">
+      <obj_property name="ElementShortName">adv</obj_property>
+      <obj_property name="ObjectShortName">adv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/prev" type="logic">
+      <obj_property name="ElementShortName">prev</obj_property>
+      <obj_property name="ObjectShortName">prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/uut/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/data_screen" type="array">
+      <obj_property name="ElementShortName">data_screen[0:3][0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_screen[0:3][0:15][7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/data_screen[0]" type="array">
+         <obj_property name="ElementShortName">[0][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/data_screen[1]" type="array">
+         <obj_property name="ElementShortName">[1][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/data_screen[2]" type="array">
+         <obj_property name="ElementShortName">[2][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/data_screen[3]" type="array">
+         <obj_property name="ElementShortName">[3][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/uut/oled_screen" type="array">
+      <obj_property name="ElementShortName">oled_screen[0:3][0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">oled_screen[0:3][0:15][7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled_screen[0]" type="array">
+         <obj_property name="ElementShortName">[0][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled_screen[1]" type="array">
+         <obj_property name="ElementShortName">[1][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled_screen[2]" type="array">
+         <obj_property name="ElementShortName">[2][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled_screen[3]" type="array">
+         <obj_property name="ElementShortName">[3][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/uut/oled/oled_ready" type="logic">
+      <obj_property name="ElementShortName">oled_ready</obj_property>
+      <obj_property name="ObjectShortName">oled_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/uut/din" type="array">
+      <obj_property name="ElementShortName">din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/current_screen" type="array">
+      <obj_property name="ElementShortName">current_screen[0:3][0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">current_screen[0:3][0:15][7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/current_screen[0]" type="array">
+         <obj_property name="ElementShortName">[0][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/current_screen[1]" type="array">
+         <obj_property name="ElementShortName">[1][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/current_screen[2]" type="array">
+         <obj_property name="ElementShortName">[2][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pattern_rec_tb/uut/oled/Example/current_screen[3]" type="array">
+         <obj_property name="ElementShortName">[3][0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:15][7:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/uut/oled_ready" type="logic">
+      <obj_property name="ElementShortName">oled_ready</obj_property>
+      <obj_property name="ObjectShortName">oled_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pattern_rec_tb/uut/refresh" type="logic">
+      <obj_property name="ElementShortName">refresh</obj_property>
+      <obj_property name="ObjectShortName">refresh</obj_property>
+   </wvobject>
+</wave_config>
