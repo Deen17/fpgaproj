@@ -99,16 +99,24 @@ begin
     variable index : integer:= 0;
     variable row, position, temp: integer := 0;
     variable Z: integer range 0 to 24 := 0;
+    variable fifty: integer range 0 to 51:= 0;
     begin
+        
         if(reset = '1') then
             state <= s3;
             go <= '0';
             valid <= '0';
             req <= x"00000000";
+            index := 0;
         else
             case state is
+                when s3=>
+                    if(start = '1') then
+                        rfs_start <= '1';
+                        state <= s0;
+                    end if;
                 when s0=>
-                    if(start = '1' and rfs_done ='1') then
+                    if(rfs_done ='1') then
                         state <= s1;
                         index := 0;
                         req <= std_logic_vector(to_unsigned(index, req'length));
@@ -131,9 +139,6 @@ begin
                         savedres <= res;
                         state <= s2;
                     end if;
-                when s3=>
-                    rfs_start <= '1';
-                    state <= s0;
                 when done=>
                     if(ram(0) = 256) then
                         state <= displaywrong;
@@ -157,7 +162,7 @@ begin
                                         oled_screen(row)(position) <= x"20"; --' '
                                         position := position + 1;
                                     else
-                                        temp := Z + 48; --pattern index
+                                        temp := (Z / 10) + 48; --pattern index
                                         oled_screen(row)(position) <= std_logic_vector(to_unsigned(temp, 8));
                                         position := position + 1;
                                     end if;
@@ -166,7 +171,8 @@ begin
                                         oled_screen(row)(position) <= x"20"; --' '
                                         position := position + 1;
                                     else
-                                        oled_screen(row)(position) <= x"3A"; --':'
+                                        temp := (Z mod 10 ) + 48; --pattern index
+                                        oled_screen(row)(position) <= std_logic_vector(to_unsigned(temp, 8));
                                         position := position + 1;
                                     end if;
                                 when 3=>
@@ -174,7 +180,7 @@ begin
                                         oled_screen(row)(position) <= x"20"; --' '
                                         position := position + 1;
                                     else
-                                    oled_screen(row)(position) <= x"20"; --' '
+                                    oled_screen(row)(position) <= x"3A"; --':'
                                     position := position + 1;
                                     end if;
                                 when 4=>
@@ -221,7 +227,7 @@ begin
                                         oled_screen(row)(position) <= x"20"; --' '
                                         position := position + 1;
                                     else
-                                        temp := Z + 48; --pattern index
+                                        temp := (Z / 10) + 48;
                                         oled_screen(row)(position) <= std_logic_vector(to_unsigned(temp, 8));
                                         position := position + 1;
                                     end if;
@@ -230,7 +236,8 @@ begin
                                         oled_screen(row)(position) <= x"20"; --' '
                                         position := position + 1;
                                     else
-                                        oled_screen(row)(position) <= x"3A"; --':'
+                                        temp := (Z mod 10) + 48;
+                                        oled_screen(row)(position) <= std_logic_vector(to_unsigned(temp, 8));
                                         position := position + 1;
                                     end if;
                                 when 11=>
@@ -238,7 +245,7 @@ begin
                                         oled_screen(row)(position) <= x"20"; --' '
                                         position := position + 1;
                                     else
-                                        oled_screen(row)(position) <= x"20"; --' '
+                                        oled_screen(row)(position) <= x"3A"; --':'
                                         position := position + 1;
                                     end if;
                                 when 12=>
@@ -311,10 +318,11 @@ begin
 						end if;
 					end if;
 			    when dxfer2 =>
+			         valid <= '0';
 			         if(oled_ready = '1') then
 			             state <= dxfer;
-			         else
-			             valid <= '0';
+			         --else
+			             --valid <= '0';
 			         end if;
 				when displayed =>
 				    if (oled_ready = '1') then 
@@ -324,17 +332,30 @@ begin
 					valid <= '0'; --might need to change
                 when final =>
 					valid<= '0';
-					refresh <= '0';
+					position := 0;
+					row := 0;
+					--refresh <= '0';
+                    if(refresh  = '1') then 
+                        if(fifty = 50) then
+                            fifty := 0;
+                            refresh <= '0';
+                        else
+                            fifty := fifty + 1;
+                        end if;
+                    end if;
                     if(prev = '1' and Z > 7) then
                         state <= left;
+                        refresh <= '0';
                     elsif (adv = '1' and Z  < 24) then
                         state <= right;
+                        refresh <= '0';
                     end if;
                 when penultimate =>
                         state<= final;
+                        fifty := 0;
                 when left =>
                     if(prev ='0') then
-                        Z:= Z - 8;
+                        Z:= Z - 16;
                         state <= displaycorrect;
                     end if;
                 when right =>
@@ -345,8 +366,18 @@ begin
                     null;
             end case;
         end if;
-    --if(refresh ='1') then refresh <= '0'; end if;
     end process;
-    
+--    process(clk)
+--    variable fifty: integer:= 0;
+--    begin
+--        if(refresh  = '1') then 
+--            if(fifty = 50) then
+--                fifty := 0;
+--                refresh <= '0';
+--            else
+--                fifty := fifty + 1;
+--            end if;
+--        end if;
+--    end process;
 
 end Behavioral;
