@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../finalproject.srcs/sources_1/imports/src-vhdl/ascii_rom.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/src-vhdl/delay.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/src-vhdl/oled_ex.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/src-vhdl/oled_ctrl.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/src-vhdl/oled_init.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string.vhd" \
+"../../../../finalproject.srcs/sources_1/new/pattern_rec.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_bkb.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_cud.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_cud_ram.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_dEe.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_dEe_ram.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_eOg.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/src-vhdl/spi_ctrl.vhd" \
+"../../../../finalproject.srcs/sim_1/new/pattern_rec_tb.vhd" \
+
+# Do not sort compile order
+nosort

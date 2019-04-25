@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1556220778">
+  <File Type="PWROPT-DCP" Name="pattern_rec_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="pattern_rec_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="pattern_rec.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="pattern_rec_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="pattern_rec_reports.tcl"/>
+  <File Type="BG-DRC" Name="pattern_rec.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="pattern_rec_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="pattern_rec_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="pattern_rec.hwdef"/>
+  <File Type="OPT-DCP" Name="pattern_rec_opt.dcp"/>
+  <File Type="OPT-DRC" Name="pattern_rec_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="pattern_rec_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="pattern_rec_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="pattern_rec_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="pattern_rec_placed.dcp"/>
+  <File Type="PLACE-IO" Name="pattern_rec_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pattern_rec_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="pattern_rec_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pattern_rec_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="pattern_rec_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pattern_rec_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pattern_rec_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="pattern_rec_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pattern_rec_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="pattern_rec_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="pattern_rec_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="pattern_rec_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="pattern_rec.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="pattern_rec_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="pattern_rec_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="pattern_rec_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="pattern_rec_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="pattern_rec_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="pattern_rec_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="pattern_rec.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="pattern_rec_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="pattern_rec.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="pattern_rec_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="pattern_rec.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pattern_rec_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="pattern_rec.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pattern_rec_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="pattern_rec_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="pattern_rec_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="pattern_rec_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pattern_rec_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="pattern_rec_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="pattern_rec_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="pattern_rec_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="pattern_rec.vdi"/>
+  <File Type="ROUTE-CLK" Name="pattern_rec_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pattern_rec_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pattern_rec_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pattern_rec_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pattern_rec_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pattern_rec_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="pattern_rec.nky"/>
+  <File Type="BITSTR-BMM" Name="pattern_rec_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="pattern_rec.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="pattern_rec.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="pattern_rec.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src-vhdl/ascii_rom.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src-vhdl/delay.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src-vhdl/oled_ex.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src-vhdl/oled_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src-vhdl/oled_init.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/read_from_string.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/read_from_string_bkb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/read_from_string_cud.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/read_from_string_cud_ram.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/read_from_string_dEe.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/read_from_string_dEe_ram.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vhdl/read_from_string_eOg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src-vhdl/spi_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pattern_rec.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="pattern_rec"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

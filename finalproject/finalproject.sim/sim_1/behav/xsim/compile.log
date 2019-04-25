@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adilr/Documents/fpga/finalproject/finalproject.srcs/sources_1/new/pattern_rec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pattern_rec
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/adilr/Documents/fpga/finalproject/finalproject.srcs/sim_1/new/pattern_rec_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pattern_rec_tb

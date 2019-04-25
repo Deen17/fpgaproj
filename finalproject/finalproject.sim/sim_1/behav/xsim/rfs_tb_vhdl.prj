@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_bkb.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_cud.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_cud_ram.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_dEe.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_dEe_ram.vhd" \
+"../../../../finalproject.srcs/sources_1/imports/vhdl/read_from_string_eOg.vhd" \
+"../../../../finalproject.srcs/sim_1/new/rfs_tb.vhd" \
+
+# Do not sort compile order
+nosort

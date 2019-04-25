@@ -1,0 +1,33 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 8cd36aa2e6bf4f3b85a715344169db1d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot pattern_rec_tb_behav xil_defaultlib.pattern_rec_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture rtl of entity xil_defaultlib.read_from_string_bkb_rom [read_from_string_bkb_rom_default]
+Compiling architecture arch of entity xil_defaultlib.read_from_string_bkb [read_from_string_bkb_default]
+Compiling architecture rtl of entity xil_defaultlib.read_from_string_cud_ram [\read_from_string_cud_ram(1,5)\]
+Compiling architecture arch of entity xil_defaultlib.read_from_string_cud [read_from_string_cud_default]
+Compiling architecture rtl of entity xil_defaultlib.read_from_string_dEe_ram [\read_from_string_dEe_ram(1,11)\]
+Compiling architecture arch of entity xil_defaultlib.read_from_string_dEe [read_from_string_dee_default]
+Compiling architecture rtl of entity xil_defaultlib.read_from_string_eOg_rom [read_from_string_eog_rom_default]
+Compiling architecture arch of entity xil_defaultlib.read_from_string_eOg [read_from_string_eog_default]
+Compiling architecture behav of entity xil_defaultlib.read_from_string [read_from_string_default]
+Compiling architecture behavioral of entity xil_defaultlib.pattern_rec [pattern_rec_default]
+Compiling architecture behavioral of entity xil_defaultlib.pattern_rec_tb
+Built simulation snapshot pattern_rec_tb_behav

@@ -1,0 +1,286 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Apr 25 15:37:28 2019
+| Host         : DESKTOP-IGHGFH8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pattern_rec_control_sets_placed.rpt
+| Design       : pattern_rec
+| Device       : xc7z020
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   213 |
+| Unused register locations in slices containing registers |   318 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      3 |            5 |
+|      4 |            4 |
+|      5 |           12 |
+|      6 |            7 |
+|      7 |          137 |
+|      8 |            2 |
+|     10 |            1 |
+|     12 |            3 |
+|    16+ |           40 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |           17 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             114 |           51 |
+| Yes          | No                    | No                     |            1275 |          491 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1309 |          386 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                               Enable Signal                              |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | oled/Initialize/temp_vdd2_out                                            |                                                               |                1 |              1 |
+|  clk_IBUF_BUFG | oled/Initialize/temp_vbat3_out                                           |                                                               |                1 |              1 |
+|  clk_IBUF_BUFG | oled/Example/spi_comp/FSM_onehot_current_state[3]_i_1__1_n_0             | reset_IBUF                                                    |                1 |              3 |
+|  clk_IBUF_BUFG | oled/Initialize/delay_comp/FSM_onehot_current_state[3]_i_1__0_n_0        | reset_IBUF                                                    |                1 |              3 |
+|  clk_IBUF_BUFG | oled/Example/delay_comp/FSM_onehot_current_state[3]_i_1__2_n_0           | reset_IBUF                                                    |                1 |              3 |
+|  clk_IBUF_BUFG | oled/Initialize/spi_comp/FSM_onehot_current_state[3]_i_1_n_0             | reset_IBUF                                                    |                1 |              3 |
+|  clk_IBUF_BUFG | oled/Initialize/E[0]                                                     | reset_IBUF                                                    |                1 |              3 |
+|  clk_IBUF_BUFG | oled/Example/temp_sdata[5]_i_1_n_0                                       | oled/Example/temp_sdata[7]_i_1_n_0                            |                1 |              4 |
+|  clk_IBUF_BUFG | oled/Example/temp_sdata[5]_i_1_n_0                                       |                                                               |                2 |              4 |
+|  clk_IBUF_BUFG | oled/Example/cur_data_col                                                | reset_IBUF                                                    |                2 |              4 |
+|  clk_IBUF_BUFG | rfs/E[0]                                                                 | reset_IBUF                                                    |                2 |              4 |
+|  clk_IBUF_BUFG | oled/Example/g0_b0__2_n_0                                                |                                                               |                2 |              5 |
+|  clk_IBUF_BUFG | oled/Example/spi_comp/temp_sdata                                         | oled/Example/spi_comp/FSM_onehot_current_state_reg_n_0_[0]    |                2 |              5 |
+|  clk_IBUF_BUFG |                                                                          | oled/Example/spi_comp/counter                                 |                1 |              5 |
+|  clk_IBUF_BUFG |                                                                          | oled/Initialize/spi_comp/counter                              |                1 |              5 |
+|  clk_IBUF_BUFG | oled/Example/Z_reg[0][0]                                                 |                                                               |                4 |              5 |
+|  clk_IBUF_BUFG | rfs/FSM_onehot_ap_CS_fsm[2]_i_1_n_0                                      | reset_IBUF                                                    |                1 |              5 |
+|  clk_IBUF_BUFG | oled/Initialize/after_state__0                                           |                                                               |                1 |              5 |
+|  clk_IBUF_BUFG | oled/Initialize/spi_comp/temp_sdata                                      | oled/Initialize/spi_comp/FSM_onehot_current_state_reg_n_0_[0] |                2 |              5 |
+|  clk_IBUF_BUFG | oled/Initialize/spi_comp/E[0]                                            | reset_IBUF                                                    |                2 |              5 |
+|  clk_IBUF_BUFG | rfs/req_reg[0][0]                                                        | reset_IBUF                                                    |                1 |              5 |
+|  clk_IBUF_BUFG | rfs/pattern_U/read_from_string_eOg_rom_U/j_reg_223_reg[0]_0[0]           | rfs/pattern_U/read_from_string_eOg_rom_U/j_reg_223_reg[0][0]  |                1 |              5 |
+|  clk_IBUF_BUFG | rfs/pattern_U/read_from_string_eOg_rom_U/result_addr_2_reg_667_reg[0][0] | reset_IBUF                                                    |                2 |              5 |
+|  clk_IBUF_BUFG | oled/Example/delay_comp/E[0]                                             | reset_IBUF                                                    |                4 |              6 |
+|  clk_IBUF_BUFG | oled/Example/temp_page[1]_i_1_n_0                                        |                                                               |                2 |              6 |
+|  clk_IBUF_BUFG | rfs/input_r_U/read_from_string_bkb_rom_U/ce0                             |                                                               |                4 |              6 |
+|  clk_IBUF_BUFG | rfs/p_0_in6_in                                                           | reset_IBUF                                                    |                2 |              6 |
+|  clk_IBUF_BUFG | rfs/fifty_reg[0][0]                                                      |                                                               |                3 |              6 |
+|  clk_IBUF_BUFG | rfs/p_1_out[0]                                                           | reset_IBUF                                                    |                1 |              6 |
+|  clk_IBUF_BUFG | rfs/pattern_U/read_from_string_eOg_rom_U/ce05_out                        | rfs/pattern_U/read_from_string_eOg_rom_U/q0[5]_i_1_n_0        |                6 |              6 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][3][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][0][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][8][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][1][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][8][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][2][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][6][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][3][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][4][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][2][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][13][0][0]                                |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][8][0][0]                                 |                                                               |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][5][0][0]                                 |                                                               |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][14][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][8][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][9][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][15][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][7][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][12][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][11][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][1][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][3][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][4][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][12][0][0]                                |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][4][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][10][0][0]                                |                                                               |                6 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][1][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][5][0][0]                                 |                                                               |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][2][0][0]                                 |                                                               |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][14][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][5][0][0]                                 |                                                               |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][6][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][9][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][15][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][6][0][0]                                 |                                                               |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][15][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][7][0][0]                                 |                                                               |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][0][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][14][0][0]                                |                                                               |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][4][0][0]                                 |                                                               |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][13][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][0][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][9][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][10][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][14][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][6][0][0]                                 |                                                               |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][12][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][10][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][11][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][0][6]_i_1_n_0                                | reset_IBUF                                                    |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][8][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][0][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][2][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][11][6]_i_1_n_0                               | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][0][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][6][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][10][6]_i_1_n_0                               | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][1][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][13][6]_i_1_n_0                               | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][3][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][6][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][11][6]_i_1_n_0                               | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][4][6]_i_1_n_0                                | reset_IBUF                                                    |                5 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][10][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][5][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][7][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][14][6]_i_1_n_0                               | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][15][6]_i_1_n_0                               | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][13][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][3][6]_i_1_n_0                                | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][7][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][9][6]_i_1_n_0                                | reset_IBUF                                                    |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][8][6]_i_1_n_0                                | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][12][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][9][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][5][6]_i_1_n_0                                | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][2][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][1][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][14][6]_i_1_n_0                               | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][2][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[1][4][6]_i_1_n_0                                | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][5][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][3][6]_i_1_n_0                                | reset_IBUF                                                    |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][9][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][13][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][4][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][0][6]_i_1_n_0                                | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][12][6]_i_1_n_0                               | reset_IBUF                                                    |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][13][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][5][6]_i_1_n_0                                | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][1][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][3][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][8][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][9][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][4][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][10][6]_i_1_n_0                               | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][14][6]_i_1_n_0                               | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][7][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][11][6]_i_1_n_0                               | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][15][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][2][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][12][6]_i_1_n_0                               | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][1][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][7][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][15][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][8][6]_i_1_n_0                                | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][14][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][2][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[2][6][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[3][6][6]_i_1_n_0                                | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/E[0]                                                        |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/spi_comp/shift_register                                     |                                                               |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][11][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Initialize/spi_comp/shift_register                                  |                                                               |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][0][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/din_reg[0][0]                                               |                                                               |                6 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][11][0][0]                                |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][12][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][13][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][10][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][7][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[0][1][0][0]                                 |                                                               |                2 |              7 |
+|  clk_IBUF_BUFG | rfs/error_array_1[8]_i_1_n_0                                             | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | rfs/error_array_0[8]_i_1_n_0                                             | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | rfs/error_array_2[8]_i_1_n_0                                             | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | rfs/p_0_in15_in                                                          | rfs/z_reg_211[6]_i_1_n_0                                      |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][13][0][0]                                |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[3][7][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][9][0][0]                                 |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/data_screen[0][15][6]_i_1_n_0                               | reset_IBUF                                                    |                1 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][11][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][10][0][0]                                |                                                               |                4 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][12][0][0]                                |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[1][5][0][0]                                 |                                                               |                6 |              7 |
+|  clk_IBUF_BUFG | rfs/pattern_U/read_from_string_eOg_rom_U/FSM_onehot_ap_CS_fsm_reg[13][1] | reset_IBUF                                                    |                3 |              7 |
+|  clk_IBUF_BUFG | rfs/pattern_U/read_from_string_eOg_rom_U/z_cast3_le6_reg_610_reg[0][0]   | reset_IBUF                                                    |                2 |              7 |
+|  clk_IBUF_BUFG | oled/Example/oled_screen_reg[2][3][0][0]                                 |                                                               |                3 |              7 |
+|  clk_IBUF_BUFG | rfs/p_0_in1_in                                                           | reset_IBUF                                                    |                2 |              8 |
+|  clk_IBUF_BUFG | oled/Initialize/temp_sdata__0                                            |                                                               |                2 |              8 |
+|  clk_IBUF_BUFG | oled/Example/g0_b0__3_n_0                                                |                                                               |                2 |             10 |
+|  clk_IBUF_BUFG | oled/Example/delay_comp/ms_counter[0]_i_2__0_n_0                         | oled/Example/delay_comp/ms_counter                            |                3 |             12 |
+|  clk_IBUF_BUFG | oled/Initialize/delay_comp/ms_counter[0]_i_2_n_0                         | oled/Initialize/delay_comp/ms_counter                         |                3 |             12 |
+|  clk_IBUF_BUFG | oled/Example/temp_char                                                   |                                                               |                4 |             12 |
+|  clk_IBUF_BUFG |                                                                          | oled/Example/delay_comp/clk_counter[0]_i_1__0_n_0             |                5 |             17 |
+|  clk_IBUF_BUFG |                                                                          | oled/Initialize/delay_comp/clk_counter[0]_i_1_n_0             |                5 |             17 |
+|  clk_IBUF_BUFG |                                                                          |                                                               |               17 |             24 |
+|  clk_IBUF_BUFG | oled/Example/current_screen[3][0][6]_i_2_n_0                             | oled/Example/current_screen[1][0][5]_i_1_n_0                  |                6 |             26 |
+|  clk_IBUF_BUFG | oled/Example/row_reg[1]                                                  | oled/Example/row_reg[1]_0                                     |                8 |             31 |
+|  clk_IBUF_BUFG | oled/Example/position_reg[1]                                             | oled/Example/position_reg[31]                                 |                7 |             31 |
+|  clk_IBUF_BUFG | rfs/ram_reg[17][0][0]                                                    |                                                               |                7 |             32 |
+|  clk_IBUF_BUFG | rfs/p_0_reg_268[31]_i_1_n_0                                              | reset_IBUF                                                    |                9 |             32 |
+|  clk_IBUF_BUFG | rfs/index_reg[0][0]                                                      | reset_IBUF                                                    |               15 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[7][0][0]                                                     |                                                               |               13 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[18][0][0]                                                    |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[19][0][0]                                                    |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[10][31][0]                                                   |                                                               |               10 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[5][0][0]                                                     |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/savedres_reg[0][0]                                                   |                                                               |               10 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[16][0][0]                                                    |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[13][0][0]                                                    |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/pattern_U/read_from_string_eOg_rom_U/q0_reg[1]_0                     |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[0][0][0]                                                     |                                                               |               13 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[11][0][0]                                                    |                                                               |               12 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[12][0][0]                                                    |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[14][0][0]                                                    |                                                               |               10 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[1][31][0]                                                    |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[9][0][0]                                                     |                                                               |               19 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[6][0][0]                                                     |                                                               |                9 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[15][0][0]                                                    |                                                               |                6 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[3][0][0]                                                     |                                                               |                6 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[8][0][0]                                                     |                                                               |                9 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[2][0][0]                                                     |                                                               |                5 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[4][0][0]                                                     |                                                               |                9 |             32 |
+|  clk_IBUF_BUFG | rfs/pattern_U/read_from_string_eOg_rom_U/q0_reg[0]_0                     |                                                               |                8 |             32 |
+|  clk_IBUF_BUFG | rfs/ram_reg[20][0][0]                                                    |                                                               |               13 |             32 |
+|  clk_IBUF_BUFG | rfs/count_1_reg_629                                                      | reset_IBUF                                                    |               10 |             33 |
+|  clk_IBUF_BUFG | rfs/pointer_U/read_from_string_dEe_ram_u/E[0]                            |                                                               |               17 |             33 |
+|  clk_IBUF_BUFG | rfs/k_reg_594                                                            | reset_IBUF                                                    |               11 |             37 |
+|  clk_IBUF_BUFG | oled/Example/current_screen[3][0][6]_i_2_n_0                             | oled/Example/current_screen[3][0][5]_i_1_n_0                  |               12 |             38 |
+|  clk_IBUF_BUFG | rfs/result_U/read_from_string_cud_ram_u/z1_reg_235_reg[31]               | rfs/pattern_U/read_from_string_eOg_rom_U/SR[0]                |               14 |             57 |
+|  clk_IBUF_BUFG |                                                                          | reset_IBUF                                                    |               39 |             70 |
+|  clk_IBUF_BUFG | oled/Example/current_screen[3][0][6]_i_2_n_0                             | oled/Example/current_screen[3][0][3]_i_1_n_0                  |               74 |            175 |
+|  clk_IBUF_BUFG | oled/Example/current_screen[3][0][6]_i_2_n_0                             | oled/Example/current_screen[3][0][6]_i_1_n_0                  |               45 |            209 |
++----------------+--------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+
+
